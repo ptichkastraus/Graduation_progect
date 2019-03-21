@@ -1,0 +1,147 @@
+@import url("grid.css");
+@import url('https://fonts.googleapis.com/css?family=Muli');
+ .container {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+body {
+    background: url(../img/berlin-cathedral-3815391_1920.jpg);
+   }
+.transparent {
+    background-color: rgba(0, 0, 250, 0.4);
+    padding: 10px;
+  }
+
+.head p {margin-top: 0;}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  color: white;
+}
+.head {
+  margin: 20px;
+  padding: 20px;
+  font-size: 150%;
+  height: 230px;
+}
+.nav{
+  position: fixed;
+  top: 230px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+legend,
+.head a,
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+}
+.column {
+display: flex;
+width: auto;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-end;
+margin: 0;
+}
+.padding {
+  padding-right: 0;
+}
+.unmarked {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.submenu {visibility: hidden;}
+.nav:hover .submenu {  visibility: visible;}
+
+.nav li,
+.nav p {
+  border: 1px solid #604BD8;
+  background: linear-gradient(to top, #604BD8, #8070D8);
+  border-radius: 3px;
+  padding: 10px;
+  margin: 2px;
+ }
+ .slider {
+     padding: 0;
+     margin:0 0 30px;
+     list-style-type: none;
+     text-align: center;
+ }
+
+ .slider li {
+     display: none;
+ }
+
+ .slider li.active {
+     display: block;
+ }
+.slider img {
+  max-width: 600px;
+}
+.card {
+  flex-wrap: wrap;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  line-height: 1.5;
+  width: 250px;
+  margin: 30px;
+  padding: 20px;
+  word-break: normal;
+}
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+label {
+  color: white;
+  font-family: 'Anton', sans-serif;
+  padding: 0;
+}
+button {
+  font-family: 'Anton', sans-serif;
+  background: linear-gradient(to top, #604BD8, #8070D8);
+  color: white;
+}
+.feedback {
+  background: white;
+  border: 2px solid #604BD8;
+  margin: 10px;
+}
+img .float {
+  float:left;
+  margin: 5px;
+  padding: 5px;
+  align-content: center;
+}
+@media screen and (max-width: 320px) {
+  .slider{
+    display: none;
+  }
+  .column {
+    flex-direction: row;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (min-width: 481px)(max-width: 768px) {
+
+}
