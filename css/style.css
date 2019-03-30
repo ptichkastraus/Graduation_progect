@@ -125,6 +125,10 @@ img .float {
   padding: 5px;
   align-content: center;
 }
+.grid {
+  position: relative;
+}
+
 @media screen and (max-width: 320px) {
   .slider{
     display: none;
